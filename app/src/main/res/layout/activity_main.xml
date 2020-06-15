@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.SwipeDismissFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    android:id="@+id/swipe_dismiss_root_container"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#111">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="39dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="85dp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/gps_issue_text"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="123dp"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/current_speed_text"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/green"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/current_speed_mph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/mph"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="134dp"
+            android:src="@drawable/dot"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/max_speed_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/gps_permission"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="7dp"
+            android:contentDescription="@drawable/ic_gps_not_saving_grey600_96dp"
+            android:onClick="onGpsPermissionClick"
+            android:src="@drawable/ic_gps_not_saving_grey600_96dp" />
+
+        <ImageButton
+            android:id="@+id/speed_limit_setting"
+            android:layout_width="27dp"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/settings"
+            android:contentDescription="@drawable/settings"
+            android:onClick="onSpeedLimitClick" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/heart"
+            android:onClick="onHeartbeatServiceClick" />
+
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</androidx.wear.widget.SwipeDismissFrameLayout>

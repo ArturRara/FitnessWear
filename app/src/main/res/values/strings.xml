@@ -1,0 +1,35 @@
+<resources>
+    <!--<string name="app_name">FitnessWear</string>
+    &lt;!&ndash;
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    &ndash;&gt;
+    <string name="hello_world">Hello Square World!</string>-->
+
+
+    <string name="app_name">Speed Tracker</string>
+    <string name="lat_label">Latitude:</string>
+    <string name="not_available">Not Available</string>
+    <string name="lon_label">Longitude:</string>
+    <string name="speed_label">Speed:</string>
+    <string name="activity_label">Activity:</string>
+    <string name="timestamp_label">Time:</string>
+    <string name="speed_limit">Limit: %1$d mph</string>
+    <string name="acquiring_gps">Acquiring GPS Fix …</string>
+    <string name="speed_for_list">%1$d mph</string>
+    <string name="intro_text">Swipe edge to exit the map.</string>
+    <string name="wl_circle">wl_circle</string>
+    <string name="enable_disable_gps_label">Enable Location Permission?</string>
+
+    <string name="mph">mph</string>
+    <string name="speed_limit_header">Speed Limit</string>
+    <string name="gps_not_available">No GPS on device. Will use phone GPS when available.</string>
+    <string name="ok">OK</string>
+    <string name="speed_format">%.0f</string>
+
+    <string name="permission_rationale">App requires location permission to function, tap GPS icon.</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCDRO-rYR9HuxWztoxu4jC7qr4HArVOLJ4</string>
+    <string name="heart_rate">Heart Rate</string>
+
+
+</resources>
